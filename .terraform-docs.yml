@@ -2,28 +2,28 @@ formatter: markdown table
 header-from: header.tf
 
 content: |-
-   {{ .Header }} 
-   
-   {{ .Providers }}
+  {{ .Header }} 
 
-   {{ .Requirements }}
+  {{ .Providers }}
 
-   {{ .Modules }}
-   
-   {{ .Resources }}
-   
-   {{ .Inputs }}
-      
-   {{ .Outputs }}
+  {{ .Requirements }}
 
-   ## Example
+  {{ .Modules }}
 
-   ```hcl
-   {{ include "examples/main.tf" }}
-   ```
+  {{ .Resources }}
 
-   {{ .Footer }}
-   
+  {{ .Inputs }}
+     
+  {{ .Outputs }}
+
+  ## Variables
+
+  ```hcl
+  {{ include "locals.tf" }}
+  ```
+
+  {{ .Footer }}
+
 output:
   file: README.md
   mode: inject

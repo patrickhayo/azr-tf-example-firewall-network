@@ -1,6 +1,13 @@
-# azr-tf-module-template
+# azr-tf-example-firewall-network
 
-[Terraform](https://www.terraform.io) Module to create **[NAME]** in Azure
+[Terraform](https://www.terraform.io) Example to build a **Virtual Network Setup with an Azure Firewall**
+
+- Virutal Network (VNET)
+- NAT Gateway
+- Private DNS Zone
+- Network Security Group
+- Route Table
+- Bastion Host
 
 <!-- BEGIN_TF_DOCS -->
 ## Prerequisites
