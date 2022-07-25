@@ -30,13 +30,13 @@
 
 | Name | Source | Version |
 |------|--------|---------|
-| <a name="module_bastion_host"></a> [bastion\_host](#module\_bastion\_host) | github.com/N3tLiX/tf-modules//bastionhost | n/a |
-| <a name="module_firewall"></a> [firewall](#module\_firewall) | github.com/N3tLiX/tf-modules//firewall | n/a |
-| <a name="module_network"></a> [network](#module\_network) | github.com/N3tLiX/modules//vnet | n/a |
-| <a name="module_nsg"></a> [nsg](#module\_nsg) | github.com/N3tLiX/modules//nsg | n/a |
-| <a name="module_privatednszone"></a> [privatednszone](#module\_privatednszone) | github.com/N3tLiX/modules//privatednszone | n/a |
-| <a name="module_rt"></a> [rt](#module\_rt) | github.com/N3tLiX/modules//rt | n/a |
-| <a name="module_rules_AzureBastionSubnet"></a> [rules\_AzureBastionSubnet](#module\_rules\_AzureBastionSubnet) | github.com/N3tLiX/tf-modules//nsg | n/a |
+| <a name="module_bastion_host"></a> [bastion\_host](#module\_bastion\_host) | github.com/patrickhayo/modules//bastionhost | n/a |
+| <a name="module_firewall"></a> [firewall](#module\_firewall) | github.com/patrickhayo/modules//firewall | n/a |
+| <a name="module_network"></a> [network](#module\_network) | github.com/patrickhayo/modules//vnet | n/a |
+| <a name="module_nsg"></a> [nsg](#module\_nsg) | github.com/patrickhayo/modules//nsg | n/a |
+| <a name="module_privatednszone"></a> [privatednszone](#module\_privatednszone) | github.com/patrickhayo/modules//privatednszone | n/a |
+| <a name="module_rt"></a> [rt](#module\_rt) | github.com/patrickhayo/modules//rt | n/a |
+| <a name="module_rules_AzureBastionSubnet"></a> [rules\_AzureBastionSubnet](#module\_rules\_AzureBastionSubnet) | github.com/patrickhayo/modules//nsg | n/a |
 
 ## Resources
 

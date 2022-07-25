@@ -10,7 +10,7 @@ data "azurerm_resource_group" "this" {
 }
 
 module "network" {
-  source              = "github.com/N3tLiX/modules//vnet"
+  source              = "github.com/patrickhayo/modules//vnet"
   vnet_name           = local.vnet_name
   resource_group_name = data.azurerm_resource_group.this.name
   location            = data.azurerm_resource_group.this.location
@@ -20,7 +20,7 @@ module "network" {
 }
 
 module "privatednszone" {
-  source               = "github.com/N3tLiX/modules//privatednszone"
+  source               = "github.com/patrickhayo/modules//privatednszone"
   name                 = local.private_dns_zone_name
   resource_group_name  = data.azurerm_resource_group.this.name
   registration_enabled = true
@@ -33,7 +33,7 @@ module "privatednszone" {
 }
 
 module "nsg" {
-  source              = "github.com/N3tLiX/modules//nsg"
+  source              = "github.com/patrickhayo/modules//nsg"
   for_each            = toset(module.network.subnet_names)
   name                = "nsg-${each.key}"
   resource_group_name = data.azurerm_resource_group.this.name
@@ -92,7 +92,7 @@ module "nsg" {
 }
 
 module "rt" {
-  source                              = "github.com/N3tLiX/modules//rt"
+  source                              = "github.com/patrickhayo/modules//rt"
   for_each                            = toset(module.network.subnet_names)
   name                                = "rt-${each.key}"
   resource_group_name                 = data.azurerm_resource_group.this.name

@@ -1,5 +1,5 @@
 module "firewall" {
-  source               = "github.com/N3tLiX/tf-modules//firewall"
+  source               = "github.com/patrickhayo/modules//firewall"
   name                 = local.firewall_name
   resource_group_name  = data.azurerm_resource_group.this.name
   location             = data.azurerm_resource_group.this.location
@@ -12,7 +12,6 @@ module "firewall" {
     module.network
   ]
 }
-
 
 # data "http" "storage_westeurope" {
 #   url = "https://azrservicetags.azurewebsites.net/Storage.WestEurope.txt"

@@ -1,5 +1,5 @@
 module "bastion_host" {
-  source = "github.com/N3tLiX/tf-modules//bastionhost"
+  source = "github.com/patrickhayo/modules//bastionhost"
 
   name                = local.bastion_host_name
   location            = data.azurerm_resource_group.this.location
@@ -11,7 +11,7 @@ module "bastion_host" {
 }
 
 module "rules_AzureBastionSubnet" {
-  source              = "github.com/N3tLiX/tf-modules//nsg"
+  source              = "github.com/patrickhayo/modules//nsg"
   name                = "nsg-${local.bastion_host_name}"
   resource_group_name = data.azurerm_resource_group.this.name
   location            = data.azurerm_resource_group.this.location
