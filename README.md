@@ -57,7 +57,6 @@ No inputs.
 | Name | Description |
 |------|-------------|
 | <a name="output_basion"></a> [basion](#output\_basion) | Basiton Host Module Settings (deployed). |
-| <a name="output_nat"></a> [nat](#output\_nat) | NAT Gateway Module Settings (deployed). |
 | <a name="output_network"></a> [network](#output\_network) | VNET Module Settings (deployed). |
 | <a name="output_nsgs"></a> [nsgs](#output\_nsgs) | NSG Module Settings (deployed). |
 | <a name="output_privatednszone"></a> [privatednszone](#output\_privatednszone) | Private DNZ Zone Module Settings (deployed). |
