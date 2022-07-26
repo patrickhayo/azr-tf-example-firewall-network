@@ -3,11 +3,6 @@ output "basion" {
   value       = module.bastion_host
 }
 
-output "nat" {
-  description = "NAT Gateway Module Settings (deployed)."
-  value       = module.nat
-}
-
 output "network" {
   description = "VNET Module Settings (deployed)."
   value       = module.network
